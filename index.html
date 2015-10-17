@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>hmu4bal</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        COLTRANE NADLER
+      </h1>
+
+      <p id="bal">#hmu4bal</p>
+    </div>
+  </body>
+
+
+  <style media="screen">
+    @keyframes swag {
+        0% {
+          opacity: 0;
+          font-size: 24px;
+          text-shadow: 0 0 0 black;
+        }
+
+        20% {
+          opacity: 0;
+          font-size: 30px;
+          text-shadow: 0 0 0 black;
+        }
+
+        90% {
+          opacity: 1;
+          font-size: 32px;
+          text-shadow: 0 5px 20px black;
+        }
+    }
+
+    @keyframes width {
+      0% {
+        width: 0;
+      }
+
+      40% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes final {
+      0% { opacity: 0; text-shaow: 0 0 0; }
+      60% { opacity: 0; text-shaow: 0 0 0 black; }
+      100% { opacity: 1; text-shadow: 0 5px 20px black; }
+    }
+
+    * {
+      font-family: Helvetica;
+    }
+
+    body {
+      background: #FF9966;
+    }
+
+    .container {
+      text-align: center;
+      margin: auto;
+      margin-top: 25vh;
+      max-width: 300px;
+    }
+
+    h1 {
+      padding: 20px;
+      animation: swag 1.5s;
+      line-height: 2em;
+      position: relative;
+      color: white;
+      text-shadow: 0 5px 20px black;
+      letter-spacing: 4px;
+    }
+
+    h1:before {
+      top: 0;
+      left: 0;
+    }
+
+    h1:after {
+      bottom: 0;
+      right: 0;
+    }
+
+    h1:before, h1:after {
+      background: white;
+      content: '';
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      animation: width 1.5s;
+    }
+
+    #bal {
+      color: white;
+      font-weight: bold;
+      text-shadow: 0 5px 20px black;
+      animation: final 3s;
+    }
+  </style>
+</html>
